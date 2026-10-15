@@ -51,6 +51,7 @@
         "defects:verify": "tsx scripts/defects.ts verify",
         "test:api": "vitest run --config tests/api/vitest.config.mts",
         "test:schemathesis": "node scripts/run-schemathesis.mjs",
+        "test:unit": "node --test \"src/test-data/**/*.test.js\"",
         "db:up": "docker compose --profile db up -d postgres",
         "db:reset": "docker compose --profile db down -v",
         "wiremock:up": "docker compose --profile testing up -d wiremock && node scripts/wait-for-wiremock.mjs",
