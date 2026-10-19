@@ -1,4 +1,3 @@
-function payout(bet, multiplier) {
+export function payout(bet, multiplier) {
     return bet * multiplier;
 }
-module.exports = { payout };

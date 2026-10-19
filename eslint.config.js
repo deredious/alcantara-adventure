@@ -1,11 +1,11 @@
-const { defineConfig } = require('eslint/config');
-const js = require('@eslint/js');
+import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 
-module.exports = defineConfig([
+export default defineConfig([
     {
         languageOptions: {
             ecmaVersion: 'latest',
-            sourceType: 'commonjs',
+            sourceType: 'module',
         },
         files: ['src/test-data/**/*.js'],
         plugins: { js },
